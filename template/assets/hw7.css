@@ -1,0 +1,179 @@
+*{
+    background-color: rgb(15, 15, 15);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+}
+nav{
+    width: 100%;
+    position: relative;
+    margin: 0;
+}
+.emoji{
+    display: flex;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 98vw;
+    height: 32vh;
+    margin: 0;
+    padding: 0;
+    height: 20vh;
+    overflow: hidden;
+    background-color: rgb(4, 34, 37);
+    background-image: linear-gradient(to right, rgb(4, 34, 37) , black);
+} 
+li a{
+    font-size: large;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+    transition: all 1s;
+}
+.hamburger{
+    position: absolute;
+    left: 80.5em;
+    bottom: 5.3em;
+    border: 1px solid rgb(15, 15, 15);
+    padding: 10px;
+    border-radius: 0 0 0 30%;
+}
+.hamburger div{
+    background-color: rgb(184, 79, 41);
+    background-image: linear-gradient(to right, rgb(184, 79, 41) , white);
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    height: 3px;
+}
+.hamburger .line1{
+    width: 12px;
+   
+}
+.hamburger .line2{
+    width: 25px;
+}
+.hamburger .line3{
+    display: flex;
+    justify-content: end;
+    width: 12px;
+    margin-left: 52%;
+}
+h1 h3 h4{
+    font-family: 'Fira Code', monospace;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+.container{
+    display: flex;
+    color: white;
+    margin: 3.5em;
+    position: relative;
+    width: 94vw;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 18em;
+    top: 2em;
+    box-sizing: border-box;
+    width: 52vw;
+    font-size: 18px;
+}
+p{
+    margin: 1.5em 0;
+    color: white;
+}
+.avatar img{
+    border-radius: 50%;
+    width: 9em;
+    height: 9em;
+    object-fit:fill;
+    position: relative;
+    top: 9em;
+    left: 9em;
+    box-shadow:  0 1em .5em  rgb(4, 34, 37);
+}
+.line{
+    width: 68vw;
+    height: 0.1em;
+    background-color: rgb(145, 83, 14);
+    background-image: linear-gradient(to right, rgb(145, 83, 14) , rgb(83, 56, 99));
+    text-align: center;
+    border: none;
+    position: absolute;
+    right: 14em;
+    top: 40em
+
+}
+.bottom-header{
+    color: white;
+    position: relative;
+    top: 40em;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+h3{
+    font-size: larger;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+}
+h4{
+    background: -webkit-linear-gradient(left, rgb(212, 108, 22) , rgb(110, 41, 150));
+    background: -o-linear-gradient(right, rgb(212, 108, 22), rgb(110, 41, 150));
+    background: -moz-linear-gradient(right, rgb(212, 108, 22), rgb(110, 41, 150));
+    background: linear-gradient(to right, rgb(212, 108, 22) , rgb(110, 41, 150)); 
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.code{
+    position: absolute;
+    top: 80em;
+    left: 6em;
+    width: 16em;
+}
+.mobile{
+    position: absolute;
+    top: 80em;
+    left: 33em;
+    width: 16em;
+}
+.file{
+    position: absolute;
+    top: 80em;
+    left: 58em;
+    width: 16em;
+}
+i{
+    color: white; 
+    position: absolute;
+    top: -1.5em;
+}
+
+@media screen and (max-width: 768px){ 
+    li a{
+        display: none;
+    }
+}
