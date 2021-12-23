@@ -1,11 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Open+Sans:ital,wght@0,300;0,400;1,500;1,700&family=Quicksand:wght@300;400;500&family=Raleway:wght@100;200;300;400&display=swap');
 *{
     background-color: rgb(15, 15, 15);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    font-family: 'Quicksand', sans-serif;
-    font-family: 'Raleway', sans-serif;
     letter-spacing: 1px;
 }
 nav{
@@ -22,7 +21,7 @@ ul{
     list-style-type: none;
     justify-content: space-around;
     align-items: center;
-    width: 98vw;
+    width: 100%;
     height: 32vh;
     margin: 0;
     padding: 0;
@@ -44,9 +43,10 @@ li a:hover {
     transition: all 1s;
 }
 .hamburger{
-    position: absolute;
+    position: fixed;
+    z-index: 1;
     left: 80.5em;
-    bottom: 5.3em;
+    bottom: 38em;
     border: 1px solid rgb(15, 15, 15);
     padding: 10px;
     border-radius: 0 0 0 30%;
@@ -72,11 +72,8 @@ li a:hover {
     width: 12px;
     margin-left: 52%;
 }
-h1 h3 h4{
+h1,h3,h4{
     font-family: 'Fira Code', monospace;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Quicksand', sans-serif;
-    font-family: 'Raleway', sans-serif;
 }
 .container{
     display: flex;
@@ -176,4 +173,32 @@ i{
     li a{
         display: none;
     }
+}
+@media screen and (max-width: 768px) {
+	body {
+		overflow-x: hidden;
+	}
+
+	.nav-links {
+		position: absolute;
+		height: 92vh;
+		width: 35%;
+		right: 0;
+		top: 8vh;
+		background-color: #5d4954;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+
+	.nav-links li {
+		opacity: 0;
+	}
+
+	.burger {
+		display: block;
+	}
 }
