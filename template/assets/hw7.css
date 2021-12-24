@@ -45,10 +45,7 @@ li a:hover {
   display: none;
   position: fixed;
   z-index: 1;
-  border: 1px solid rgb(15, 15, 15);
-  padding: 10px;
-  border-radius: 0 0 0 30%;
-  cursor: pointer;
+
 }
 .hamburger div {
   background-color: rgb(184, 79, 41);
@@ -132,7 +129,7 @@ h3 {
 .bottom {
   margin-top: 8rem;
   display: grid;
-  margin-left: 22rem;
+  margin-left: 12rem;
   grid-template-columns: 30% 30% 30%;
 }
 h4 {
@@ -171,9 +168,7 @@ i {
     margin-top: 8rem;
     display: grid;
     grid-template-columns: 100%;
-  }
-  li a {
-    display: none;
+    align-items: center;
   }
   body {
     z-index: 0;
@@ -183,28 +178,56 @@ i {
     justify-content: flex-start;
     flex-wrap: wrap;
   }
-  .nav-links {
-    height: 100%;
-    width: 35%;
-    background-color: rgb(4, 34, 37);
-    background-image: linear-gradient(to right, rgb(4, 34, 37), black);
-    display: flex;
+
+
+}
+@media only screen and (max-width: 768px) {
+  ul {
+    position: fixed;
+    left: 100%;
+    top: 4.4rem;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
+    background-color: #fff;
+    width: 35%;
+    height: 100%;
+    text-align: center;
+    transition: 0.3s;
   }
 
-  /* .nav-links li {
-		opacity: 0;
-	}*/
+  ul.active {
+      left: 65%;
+  }
+
+  li {
+      margin: 2.5rem 0;
+  }
 
   .hamburger {
-    display: block;
+      display: block;
+      border: 1px solid rgb(15, 15, 15);
+      padding: 10px;
+      border-radius: 0 0 0 30%;
+      cursor: pointer;
+      background-color: #151515;
+      padding: 2%;
+      position: absolute;
+      top: 0;
+      right: 0;
+   
   }
-}
+  .container{
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .avatar img {
 
+    margin-bottom: 3rem;
+  }
+  .text, .paragraph{
+    align-content: flex-start;
+  }
+
+}
 @media screen and (max-width: 576px) {
   .text {
     text-align: center;
